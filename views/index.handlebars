@@ -1,0 +1,15 @@
+<h2>Star Wars Planets</h2>
+<ul class="planet-list" style="display: flex; flex-direction: row; flex-wrap: wrap">
+    {{#each planets}}
+    <li style="max-width: 300px; width: 100%; border: 1px solid purple; padding: 10px; margin: 10px; list-style-type: none; border-radius: 10px;">
+        <p style="font-size: 1.3rem">Planet: <b>{{this.name}}</b></p>
+        <p style="font-size: 1.1rem">Gravity: <b>{{this.gravity}}</b></p>
+        <p style="font-size: 1rem">Population: <b>{{this.population}}</b></p>
+        <p style="font-size: .9rem">Terrain Type: <b>{{this.terrain}}</b></p>
+        <p style="font-size: .8rem">Climate Type: <b>{{this.climate}}</b></p>
+    </li>
+    <br>
+    {{else}}
+    <p>This list is not working currently. Please try again.</p>
+    {{/each}}
+</ul>
